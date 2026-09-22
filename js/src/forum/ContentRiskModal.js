@@ -4,9 +4,8 @@ import Button from 'flarum/common/components/Button';
 import Icon from 'flarum/common/components/Icon';
 
 export default class ContentRiskModal extends Modal {
-  static initAttrs(attrs) {
-    super.initAttrs(attrs);
-    attrs.className = 'ContentRiskFeeModal Modal--small';
+  className() {
+    return 'ContentRiskFeeModal Modal--small';
   }
 
   title() {
