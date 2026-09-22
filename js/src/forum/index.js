@@ -49,17 +49,16 @@ function inspect(component, original) {
       m.redraw();
 
       if (attrs.blocked) {
-        app.modal.show(ContentRiskModal, {
+        return app.modal.show(ContentRiskModal, {
           blocked: true,
         });
-        return;
       }
 
       if (!attrs.requiresPayment) {
         return original();
       }
 
-      app.modal.show(ContentRiskModal, {
+      return app.modal.show(ContentRiskModal, {
         fee: Number(attrs.fee || 0),
         balance: Number(attrs.balance || 0),
         remainingBalance: Number(attrs.remainingBalance || 0),
