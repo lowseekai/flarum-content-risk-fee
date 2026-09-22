@@ -1,0 +1,45 @@
+{
+    "name": "lowseekai/flarum-content-risk-fee",
+    "description": "Charge points before publishing content that matches configured risk rules.",
+    "keywords": [
+        "flarum",
+        "points",
+        "moderation",
+        "spam"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^2.0.0",
+        "ramon/point-system": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lowseekai\\ContentRiskFee\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Content Risk Fee",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-shield-alt",
+                "color": "#ffffff",
+                "backgroundColor": "#c62828"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "prettier": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

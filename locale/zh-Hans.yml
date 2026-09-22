@@ -1,0 +1,37 @@
+lowseekai-content-risk-fee:
+  forum:
+    modal:
+      title: 发布前确认
+      risk_title: 内容命中发布规则
+      risk_message: 这条内容包含需要额外确认的外链或敏感内容。内容不会被修改，确认后将正常发布。
+      risk_type: 命中类型
+      risk_value: 外链或敏感内容
+      fee: 本次扣除
+      balance_after: 扣除后余额
+      insufficient: 当前积分不足，暂时无法支付并发布。
+      confirm: 支付 {fee} {currency} 并发布
+      back: 返回修改
+      blocked_title: 暂时无法发布
+      blocked_message: 检测到你在短时间内重复发布相同内容，请修改内容后再发布。
+    errors:
+      inspect_failed: 发布检查失败，请稍后重试。
+  admin:
+    settings:
+      enabled: 启用发布风险积分确认
+      enabled_help: 当内容命中外链或敏感内容规则时，要求用户在发布前确认扣除积分。
+      detect_links: 检测非白名单外链
+      detect_sensitive_words: 检测敏感词和自定义正则
+      link_fee: 外链扣除积分
+      sensitive_fee: 敏感内容扣除积分
+      max_fee: 单次最高扣除积分
+      whitelist_domains: 外链白名单
+      whitelist_domains_help: 每行填写一个主域名，例如 github.com。主域名也会匹配其子域名。
+      sensitive_words: 敏感词列表
+      sensitive_words_help: 每行或使用英文逗号填写一个词。规则不会发送到前端。
+      custom_regex: 自定义正则表达式
+      custom_regex_help: 每行填写一条正则，可以带分隔符，也可以只填写表达式正文。
+      duplicate_enabled: 启用重复内容检测
+      duplicate_window_hours: 重复检测时间窗口（小时）
+      duplicate_block_after: 达到几次后阻止重复发布
+    permissions:
+      bypass: 绕过外链和敏感内容积分扣除

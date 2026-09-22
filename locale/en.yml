@@ -1,0 +1,37 @@
+lowseekai-content-risk-fee:
+  forum:
+    modal:
+      title: Publishing reminder
+      risk_title: Publishing rule matched
+      risk_message: This content contains an external link or sensitive content that needs confirmation. The content will remain unchanged and will be published after confirmation.
+      risk_type: Matched type
+      risk_value: External link or sensitive content
+      fee: Charge
+      balance_after: Balance after charge
+      insufficient: You do not have enough points to publish this content.
+      confirm: Pay {fee} {currency} and publish
+      back: Return to edit
+      blocked_title: Publishing temporarily blocked
+      blocked_message: The same content was posted repeatedly in a short period. Please edit it before publishing again.
+    errors:
+      inspect_failed: The publishing check failed. Please try again.
+  admin:
+    settings:
+      enabled: Enable publishing risk confirmation
+      enabled_help: Ask for point confirmation before publishing content that matches a configured rule.
+      detect_links: Detect non-whitelisted external links
+      detect_sensitive_words: Detect sensitive words and custom regular expressions
+      link_fee: Points charged for an external link
+      sensitive_fee: Points charged for sensitive content
+      max_fee: Maximum charge per post
+      whitelist_domains: External-link whitelist
+      whitelist_domains_help: Enter one root domain per line, such as github.com. Root domains also match subdomains.
+      sensitive_words: Sensitive word list
+      sensitive_words_help: Enter one word per line or separate words with commas. The rules are never sent to the browser.
+      custom_regex: Custom regular expressions
+      custom_regex_help: Enter one expression per line, with or without delimiters.
+      duplicate_enabled: Enable duplicate-content detection
+      duplicate_window_hours: Duplicate detection window in hours
+      duplicate_block_after: Block after this many occurrences
+    permissions:
+      bypass: Bypass external-link and sensitive-content charges

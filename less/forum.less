@@ -1,0 +1,66 @@
+.ContentRiskFeeModal {
+  .Modal-body {
+    padding: 20px;
+  }
+
+  .ContentRiskFeeModal-message {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+
+    > .icon {
+      color: #c62828;
+      font-size: 22px;
+      margin-top: 2px;
+    }
+
+    p {
+      margin: 6px 0 0;
+      color: #667085;
+    }
+  }
+
+  .ContentRiskFeeModal-message--blocked > .icon {
+    color: #b42318;
+  }
+
+  .ContentRiskFeeModal-summary {
+    margin: 0 0 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    > div:last-child {
+      border-bottom: 0;
+    }
+
+    dt {
+      color: #667085;
+    }
+
+    dd {
+      margin: 0;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+
+  .ContentRiskFeeModal-insufficient {
+    color: #b42318;
+  }
+
+  .Form-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}
