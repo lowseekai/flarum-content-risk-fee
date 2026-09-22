@@ -3,7 +3,8 @@ lowseekai-content-risk-fee:
     modal:
       title: 发布前确认
       risk_title: 内容命中发布规则
-      risk_message: 这条内容包含需要额外确认的外链或敏感内容。内容不会被修改，确认后将正常发布。
+      risk_message: 这条内容包含需要额外确认的外链或敏感内容。
+      risk_message_note: 内容不会被修改，确认后将正常发布。
       risk_type: 命中类型
       risk_value: 外链或敏感内容
       fee: 本次扣除
