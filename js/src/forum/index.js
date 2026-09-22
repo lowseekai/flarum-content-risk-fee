@@ -68,11 +68,10 @@ function inspect(component, original) {
             token: attrs.token,
             title,
           };
-          try {
-            original();
-          } finally {
-            component._contentRiskApproved = false;
-          }
+          // Flarum may open the tag selector before it performs the actual
+          // create request. Keep the approval on the composer until the
+          // request has consumed it.
+          original();
         },
       });
     })
